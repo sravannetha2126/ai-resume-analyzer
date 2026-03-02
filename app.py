@@ -112,9 +112,11 @@ def calculate_ats_score(resume_text):
 
     return score, feedback
 
+
 # ===============================
 # STREAMLIT UI
 # ===============================
+
 st.set_page_config(page_title="AI Resume Analyzer", layout="wide")
 
 st.title("🧠 AI-Based Resume Analyzer")
@@ -184,4 +186,4 @@ if st.button("🚀 Analyze Resume"):
             for i, step in enumerate(learning_roadmaps[role], 1):
                 st.write(f"{i}. {step}")
 
-        st.divider()
+    st.divider()
